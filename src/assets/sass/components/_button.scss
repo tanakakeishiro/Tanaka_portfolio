@@ -1,0 +1,38 @@
+@use "../global/variables" as *;
+@use "../global/mixins" as *;
+
+// ボタンコンポーネント
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 318px;
+  height: 80px;
+  padding: 24px 40px;
+  border-radius: 50px;
+  background: linear-gradient(
+    -89deg,
+    $color-btn-gradient-start 0%,
+    $color-btn-gradient-end 100%
+  );
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @include mq(pc) {
+    // PC時のスタイルは必要に応じて追加
+  }
+}
+
+.button__text {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75em;
+  letter-spacing: 0.03em;
+  color: #fff;
+  text-align: center;
+}

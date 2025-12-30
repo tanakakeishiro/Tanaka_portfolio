@@ -1,0 +1,81 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: linear-gradient(-89deg, rgb(0, 62, 136) 0%, rgb(1, 149, 211) 100%);
+  padding: 24px 40px;
+  width: 318px;
+  height: 80px;
+  -webkit-text-decoration: none;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+.button:hover {
+  opacity: 0.8;
+}
+.button__text {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75em;
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+body {
+  background-color: #fff;
+  padding-top: 60px;
+  color: #333;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.7;
+  font-family: "Noto Serif JP", serif;
+}
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 0;
+  }
+}
+
+.inner {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media screen and (min-width: 768px) {
+  .inner {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    max-width: 1280px;
+  }
+}
+
+.xl-br {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .xl-br {
+    display: block;
+  }
+}
+
+.pc-br {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .pc-br {
+    display: block;
+  }
+}
+
+.sp-br {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .sp-br {
+    display: none;
+  }
+}
