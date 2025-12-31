@@ -19,12 +19,12 @@ body {
 }
 
 .inner {
-  padding-inline: 15px;
+  padding-inline: 16px;
 
   @include mq(md) {
-    max-width: calc(1200px + 40px * 2);
+    max-width: calc(1080px + 180px * 2);
     margin-inline: auto;
-    padding-inline: 40px;
+    padding-inline: 180px;
   }
 }
 

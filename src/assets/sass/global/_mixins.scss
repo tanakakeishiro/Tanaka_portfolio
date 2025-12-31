@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "variables" as *;
 
-@mixin mq($breakpoint: pc) {
+@mixin mq($breakpoint: md) {
   @media #{map.get($breakpoints, $breakpoint)} {
     @content;
   }
