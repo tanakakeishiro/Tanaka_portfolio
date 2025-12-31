@@ -22,7 +22,7 @@
     opacity: 0.8;
   }
 
-  @include mq(pc) {
+  @include mq(md) {
     // PC時のスタイルは必要に応じて追加
   }
 }

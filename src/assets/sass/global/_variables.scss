@@ -10,26 +10,56 @@ $color-text-light-gray: #989898;
 $color-accent: #e7728e;
 $color-bg-footer: #f7f7f7;
 $color-overlay: rgb(0 0 0 / 12%);
+$color-section-bg: #e6f0fc;
+$color-service-bg: #f6f9fc;
+$color-heading: #003e88;
+$color-line-accent: #ffee54;
+$color-error: #ce0000;
+$color-border: #cccccc;
 
 // ボタン用グラデーション色
 $color-btn-gradient-start: rgb(0 62 136 / 100%);
 $color-btn-gradient-end: rgb(1 149 211 / 100%);
+$button-padding-small: 10px 24px;
 
 // フォント
-$font-base: "Noto Serif JP", serif;
+$font-base: "Noto Sans JP", sans-serif;
 $font-size-base: 1em; // 16px = 1em
-$line-height-base: 1.7;
-$font-weight-base: 300;
+$font-size-title: 1.875rem; // 30px
+$font-size-heading-sp: 2.125rem; // 34px
+$font-size-heading-pc: 2.375rem; // 38px
+$font-size-card-title: 1.25rem; // 20px
+$line-height-base: 1.75;
+$line-height-title: 1.7;
+$line-height-heading: 1.5;
+$line-height-card-title: 1.6;
+$font-weight-base: 500;
+$font-weight-bold: 700;
+$letter-spacing-title: 0.02em;
+$letter-spacing-nav: 0.03em;
+$letter-spacing-card-title: 0.025em;
 
 // レイアウト
 $header-height-sp: 60px;
 $header-height-pc: 70px;
 $width-inner: 1280px;
+$header-padding-sp: 16px;
+$header-padding-pc: 28px 36px;
+$header-max-width: 1440px;
+$gap-nav: 30px;
+$section-padding-sp: 80px 16px;
+$section-padding-pc: 120px 180px;
+$gap-section: 40px;
+$gap-card: 24px;
+$gap-card-pc: 26px;
+$gap-card-inner: 16px;
+$card-width-sp: 343px;
+$card-width-pc: 343px;
 
 // ブレークポイント
 $breakpoints: (
   sm: "screen and (min-width: 600px)",
-  pc: "screen and (min-width: 768px)",
+  md: "screen and (min-width: 768px)",
   lg: "screen and (min-width: 900px)",
   xl: "screen and (min-width: 1200px)",
 );
@@ -50,9 +80,3 @@ $layer: (
   footer: 10,
   default: 1
 );
-
-// 関数
-@function px-to-rem($pixels, $baseFontSize: 16) {
-  @return math.div($pixels, $baseFontSize) * 1rem;
-}
-

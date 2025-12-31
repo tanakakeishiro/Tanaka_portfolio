@@ -1,6 +1,8 @@
 @use "global/variables" as *;
 @use "global/mixins" as *;
 @use "components/button";
+@use "page/index";
+
 
 body {
   font-family: $font-base;
@@ -11,7 +13,7 @@ body {
   font-weight: $font-weight-base;
   padding-top: $header-height-sp;
 
-  @include mq(pc) {
+  @include mq(md) {
     padding-top: 0;
   }
 }
@@ -19,7 +21,7 @@ body {
 .inner {
   padding-inline: 15px;
 
-  @include mq(pc) {
+  @include mq(md) {
     max-width: calc(1200px + 40px * 2);
     margin-inline: auto;
     padding-inline: 40px;
@@ -37,7 +39,7 @@ body {
 .pc-br {
   display: none;
 
-  @include mq(pc) {
+  @include mq(md) {
     display: block;
   }
 }
@@ -45,7 +47,7 @@ body {
 .sp-br {
   display: block;
 
-  @include mq(pc) {
+  @include mq(md) {
     display: none;
   }
 }
